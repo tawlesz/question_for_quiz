@@ -66,6 +66,8 @@ body {
   color: var(--text);
   text-decoration: none;
   transition: all 0.2s;
+  width: 36px;
+  height: 36px;
 }
 .github-btn:hover {
   border-color: var(--accent);
@@ -75,11 +77,16 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 8px 12px;
+  padding: 8px;
   cursor: pointer;
   color: var(--text);
   font-size: 18px;
   transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .theme-toggle:hover {
   border-color: var(--accent);
@@ -334,14 +341,9 @@ body {
   }
   
   .header-actions {
-    position: static;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-  
-  .github-btn,
-  .theme-toggle {
-    padding: 10px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   
   .card {
